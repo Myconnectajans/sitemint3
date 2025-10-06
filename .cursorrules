@@ -1,0 +1,17 @@
+projemi geliştirirken next.js kullanılacak.
+css yazarken tailwind css kullanılacak.
+bana chatten her zaman türkçe cevap ver.
+yazdığın cevaplar kısa olsun
+
+gereksiz css dosyaları oluşturulmayacak. mümkün olduğunca talwind css utility sınıfları kullanılacak.
+özel css yazılması gereken durumlarda global css yerine modüler css yazılacak.
+tüm kodlar companent yapısında parçalara ayrılacak şekilde yazılacak.
+hiçbir companent dosyası 600-700 satırı aşmamalıdır.
+companentlerin içinde gereksiz fonksiyonlar olmamalıdır.
+gerekli olan fonksiyonlar companentlerin dışında yazılacak.
+gerekli olan fonksiyonların adları kısa ve anlamlı olmalıdır.
+gerekli olan fonksiyonların adları kısa ve anlamlı olmalıdır.
+tasarım modern tasarım kulrallarına uygun olacak şekilde yapılacaktır. (material desing apple UI vb.) 
+renk paleti tipography kulrallarına uygun olacak şekilde yapılacaktır.
+tasarımları yaparken güncel modern UIUX kütüphanelerini kullan ve modern tasarım yap.
+api istekleri async/await kullanılacak. ve hata yönetimi düzgün bir şekilde sağlanacaktır.

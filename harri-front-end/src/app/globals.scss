@@ -1,0 +1,102 @@
+@import '~bootstrap/scss/bootstrap';
+@import "swiper/css/bundle";
+@import "~slick-carousel/slick/slick.css"; 
+@import 'node_modules/react-modal-video/scss/modal-video.scss';
+@import 'node_modules/react-tooltip/dist/react-tooltip.css';
+@import 'react-toastify/dist/ReactToastify.css';
+
+/* Logo Modal Animation */
+@keyframes logoModalZoom {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Logo Modal Overlay - Force visibility */
+.logo-modal-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: rgba(255, 0, 0, 0.95) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 999999 !important;
+  padding: 20px !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  border: none !important;
+  outline: none !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+@import '@assets/css/nice-select.css';
+@import '@assets/scss/main.scss';
+
+/* Tüm loading/skeleton/spinner göstergelerini gizle */
+#nprogress,
+#nprogress .bar,
+#nprogress .peg,
+#nprogress .spinner,
+#nprogress .spinner-icon,
+[data-nextjs-scroll-focus-boundary],
+.react-loading-skeleton,
+[class*="skeleton"],
+[class*="Skeleton"],
+[class*="loading"],
+[class*="Loading"],
+[class*="spinner"],
+[class*="Spinner"],
+[aria-busy="true"],
+[role="progressbar"],
+.next-loading,
+.page-loading,
+div[style*="position: fixed"][style*="z-index"] img[alt*="logo"],
+div[style*="position: fixed"][style*="inset: 0"],
+body > div:first-child:not(#__next):not([id^="react"]) {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  width: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Next.js varsayılan loading overlay'i gizle */
+body::before,
+body::after,
+html::before,
+html::after {
+  display: none !important;
+}
+
+/* Tüm fixed position loading overlay'lerini gizle */
+div[style*="position: fixed"][style*="background"],
+div[style*="position: fixed"][style*="z-index: 999"],
+div[style*="position: fixed"][style*="z-index: 9999"] {
+  display: none !important;
+}
+
+/* Toast otomatik kaybolma zorlaması */
+.Toastify__toast {
+  animation-duration: 2s !important;
+  transition: opacity 0.3s ease-in-out !important;
+}
+
+.Toastify__toast--default {
+  animation-play-state: running !important;
+}
+
+/* Toast'ların üzerine gelindiğinde duraklamamasını zorla */
+.Toastify__toast:hover {
+  animation-play-state: running !important;
+}
